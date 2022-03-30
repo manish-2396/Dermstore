@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dermstore | Skin Care Website for Beauty Products Online</title>
+    <script
+       src="https://kit.fontawesome.com/24c494a6b6.js"
+       crossorigin="anonymous"
+     ></script>
+     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poly&display=swap" rel="stylesheet"> -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poly&display=swap" rel="stylesheet">
+    <style>
+        #top_div{
+            width: 100%;
+            height: 230px;
+            /* border: 1px solid red; */
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+        }
+
+        .white{
+            width: 100%;
+            height: 62%;
+            /* border: 1px solid black; */
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            margin-top: 25px;
+        }
+
+        .white_top{
+            display: flex;
+            justify-content: space-between;
+            width: 88%;
+            /* border: 1px solid blue; */
+            margin: auto;
+            margin-top: 22px;
+        }
+
+        .search>input{
+            height: 38px;
+            width: 400px;
+            /* border: 1px solid gray;  */
+            border: none;
+            font-size: 15px;
+            margin-left: 5px;
+        }
+
+        .search{
+            height: 40px;
+            width: 450px;
+            border: 1px solid #a6a6a6;
+            margin-top: 10px;
+        }
+
+    
+        .account{
+            display: flex;
+            justify-content: space-between;
+            width: 80px;
+            /* border: 1px solid red; */
+        }
+
+        .account>i{
+            font-size: 20px;
+            margin-top: 14px;
+        }
+
+        .account_and_cart{
+            display: flex;
+            width: 18%;
+            justify-content: space-between;
+            margin-top: 8px;
+        }
+
+        .cart{
+            display: flex;
+            font-size: 18px;
+            justify-content: space-between;
+            width: 60px;
+        }
+        
+        .top_last{
+            display: flex;
+            width: 77.5%;
+            margin: auto;
+            margin-left: 90px;
+            justify-content: space-between;
+            font-family: 'Poly', serif;
+            font-size: 15px;
+            color: #525252;
+        }
+
+        .p{
+            font-family: 'Lato', sans-serif;
+            font-size: 14.5px;
+        }
+
+        #gray{
+            display: flex;
+            width: 67%;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .gray_matter{
+            display: flex;
+        }
+
+        .icon{
+            margin-top: 12px;
+        }
+       
+        .gray_matter>div>p{
+            padding-left: 8px;
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+        }
+
+        #second_section{
+            width: 100%;
+            background-color: #cccccc;
+            text-align: center;
+            height: 50px;
+            font-family: 'Lato', sans-serif;
+            font-weight: bolder;
+            padding-top: 1px;
+            font-size: 14px;
+            color: #3a3c47;
+        }
+
+        .third_image>img{
+            height: 600px;
+            width: 100%;
+            border: 2px solid black;
+        }
+
+        #fourth_section{
+            height: 80px;
+            /* border: 1px solid red; */
+            text-align: center;
+        }
+
+        #fourth_section>p:nth-child(1)
+        {
+            font-size: 24px;
+            font-family: 'Poly', serif;
+        }
+
+        #fourth_section>p:nth-child(2)
+        {
+            font-family: 'Lato', sans-serif;
+            margin-top: -20px;
+            font-size: 14px;
+        }
+
+        #fifth_section{
+            width: 93%;
+            margin: auto;
+            /* border: 1px solid blue; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #fifth_section>div>img{
+            width: 100%;
+            height: 490px;
+        }
+
+        .scroll{
+            width: 50%;
+            display: flex;
+            /* border: 1px solid darkmagenta; */
+        }
+
+        .scroll_matter{
+            width: 98%;
+            /* height: 100px; */
+            /* border: 1px solid red; */
+            display: flex;
+            overflow-y: hidden;
+            overflow-x: auto;
+        }
+
+        .scroll_img{
+            height: 62%;
+            /* width: 92%; */
+            width: 100%;
+        }
+
+        .scroll_div{
+            border: 1px solid blue;
+            /* width: 500px; */
+        }
+
+        .scroll_name{
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            font-size: 14.5px;
+        }
+
+        .scroll_price{
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+        }
+
+        .scroll_button{
+            /* margin-left: px; */
+            padding: 8px 100px 8px 100px;
+            /* width: 90%; */
+            background-color: #222222;
+            color: white;
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            white-space: nowrap;
+            margin-bottom: -25px;
+            /* text-align: center; */
+        }
+
+        .left{
+            height: 8%;
+            width: 5%;
+            margin-top: 30%;
+        }
+
+        .btn_right{
+            height: 8%;
+            width: 5%;
+            margin-top: 30%;
+        }
+
+        #sixth_section{
+            font-family: 'Poly', serif;
+            font-size: 24px;
+            text-align: center;
+            /* border: 1px solid black; */
+        }
+
+        #seventh_section{
+            display: flex;
+            width: 93%;
+            height: 540px;
+            margin: auto;
+            /* border: 1px solid red; */
+        }
+
+        .seventh_section_products{
+            display: flex;
+            width: 98%;
+            overflow-y: hidden;
+            overflow-x: auto;
+            justify-content: space-between;
+        }
+
+        .sub{
+            border: 1px solid gray;
+            text-align: center;
+            height: 6%;
+            font-family: 'Lato', sans-serif;
+            font-size: 14.5px;
+            width: 86%;
+            margin: auto;
+            padding-top: 6px;
+        }
+
+        #eighth_section{
+            font-family: 'Poly', serif;
+            font-size: 24px;
+            text-align: center;
+            /* border: 1px solid black; */
+        }
+
+        #ninth_section{
+            padding-top: 20px;
+            width: 85%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+
+        #ninth_section>div>button{
+            width: 98%;
+            /* height: 90%; */
+            padding: 12px 0px 12px 0px;
+            background-color: white;
+            border: 2px solid black;
+        }
+
+        #tenth_section{
+            padding-top: 40px;
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            /* border: 1px solid red; */
+        }
+
+        #tenth_section>div>img{
+            width: 100%;
+        }
+
+        .tenth_section_matter{
+            text-align: center;
+            font-family: 'Poly', serif;
+            font-size: 20px;
+            margin-top: 3px;
+        }
+
+        .tenth_section_sub{
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            margin-top: -12px;
+        }
+
+        #eleventh_section{
+            width: 92%;
+            margin: auto;
+            /* border: 1px solid blue; */
+        }
+
+        #eleventh_section>div>img{
+            width: 100%;
+            padding-top: 20px;
+        }
+
+        #twelth_section{
+            font-family: 'Poly', serif;
+            font-size: 24px;
+            text-align: center;
+            /* border: 1px solid black; */
+        }
+
+        #thirteenth_section{
+            padding-top: 20px;
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            /* border: 1px solid red; */
+        }
+
+        #thirteenth_section>div>img{
+            width: 100%;
+        }
+
+        #thirteenth_section>div:nth-child(2)>img
+        {
+            padding-top: 40px;
+            /* border: 1px solid blue; */
+        }
+
+        #fourteenth_section{
+            font-family: 'Poly', serif;
+            font-size: 24px;
+            text-align: center;
+            border: 1px solid black;
+            margin-top: 60px;
+        }
+
+        #fifteenth_section{
+            display: flex;
+            width: 93%;
+            height: 540px;
+            margin: auto;
+            border: 1px solid red;
+        }
+
+        .fifteenth_section_products{
+            display: flex;
+            width: 98%;
+            overflow-y: hidden;
+            overflow-x: auto;
+            justify-content: space-between;
+        }
+
+        #sixteenth_section{
+            font-family: 'Poly', serif;
+            font-size: 24px;
+            text-align: center;
+            border: 1px solid black;
+            margin-top: 60px;
+        }
+
+        #seventeenth_section{
+            display: flex;
+            width: 93%;
+            height: 540px;
+            margin: auto;
+            border: 1px solid red;
+        }
+
+        .seventeenth_section_products{
+            display: flex;
+            width: 98%;
+            overflow-y: hidden;
+            overflow-x: auto;
+            justify-content: space-between;
+        }
+       
+        @media only screen and (min-width: 421px) and (max-width: 780px){
+        }
+
+
+
+
+
+        @media only screen and (min-width: 70px) and (max-width: 420px){}
+    </style>
+</head>
+<body>
+    <div id="top_div">
+        <div class="white">
+            <!-- First part -->
+            <div class="white_top">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREOArrqc7sf8CcH6397fZikjFfRELlBl4Iwc_F3LsQXdiU5tvc8EYd3RXyDTTmrIhEhg&usqp=CAU" alt="" style="height: 60px;"> 
+                </div>
+
+                <div class="search">
+                    <input type="text" placeholder="Search for a product or brand...">
+                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="margin-bottom: -4px;" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                </div>
+
+                <div class="account_and_cart">
+                    <div class="account">
+                        <i class="fa-regular fa-user"></i>
+                        <p class="p">Account</p>
+                    </div>
+                    <div class="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="margin-top: 14px;" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                        </svg>
+                        <p class="p">Cart</p>
+                    </div>
+                </div>
+              </div>
+            <div class="top_last">
+                <p>Brands</p>
+                <p>Browse By</p>
+                <p>Bestsellers</p>
+                <p>Skin Care</p>
+                <p>Make up</p>
+                <p>Hair Care</p>
+                <p>Bath & Body</p>
+                <p>Men</p>
+                <p>Tools & Devices</p>
+                <p>Gifts & Sets</p>
+                <p>BeautyFIX</p>
+                <p>Sale</p>
+                <p>New</p>
+                <p>Skin 101</p>
+            </div>
+        </div>
+       <div id="gray">
+           <div class="gray_matter">
+               <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+              </svg></div>
+               <div><p>FREE US Shipping over $50</p></div>
+           </div>
+
+           <div class="gray_matter">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+              </svg></div>
+            <div><p>New customers save 15% with code WELCOME15</p></div>
+        </div>
+
+        <div class="gray_matter">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+              </svg></div>
+            <div><p>Redeem Dermstore Rewards</p></div>
+        </div>
+
+        <div class="gray_matter">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg></div>
+            <div><p>Pay in 4 with Klarna</p></div>
+        </div>
+       </div>
+    </div>
+
+
+
+    <div id="second_section">
+        <p>Receive a 14-piece Gift (Worth $157) when you spend $175+! See cart for details. SHOP NOW</p>
+    </div>
+
+
+    <div id="third_section">
+        <div class="third_image">
+            <img src="https://static.thcdn.com/images/xlarge/webp/widgets/208-us/17/original-0303-STDCRE-32266-DS-AMR-MarchSPFLite-Banners-1920x700-095817.jpg" alt="">
+        </div>
+    </div>
+
+
+    <div id="fourth_section">
+        <p>3x Points on EltaMD</p>
+        <p>Rewards members earn TRIPLE on best-selling SPF. Ends 4/3.</p>
+    </div>
+
+    <div id="fifth_section">
+        <div><img src="https://static.thcdn.com/images/medium/webp/widgets/208-us/54/0303-STDCRE-32266-DS-AMR-MarchSPFLite-Square-676x556-074354.jpg"></div>
+        <div class="scroll">
+            <button class="left"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg></button>
+
+            <div class="scroll_matter"></div>
+
+            <button class="btn_right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+            </svg></button>
+        </div>
+    </div>
+
+    <div id="sixth_section">
+        <p>Recommended for you</p>
+    </div>
+
+    <div id="seventh_section">
+        <button class="left" style="width: 3%; padding-top: 10px; padding-bottom: 10px; margin-top: 14%;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg></button>
+        <div class="seventh_section_products"></div>
+        <button class="btn_right" style="width: 3%; padding-top: 10px; padding-bottom: 10px; margin-top: 14%;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </svg></button>
+    </div>
+
+    <div id="eighth_section">
+        <p>Shop By Category</p>
+    </div>
+
+    <div id="ninth_section">
+        <div><button>SKIN CARE</button></div>
+        <div><button>SUNSCREEN</button></div>
+        <div><button>MOISTURIZERS</button></div>
+        <div><button>HAIR CARE</button></div>
+        <div><button>EYE CREAM</button></div>
+        <div><button>CLEANSERS</button></div>
+        <div><button>MAKEUP</button></div>
+        <div><button>FACE SERUMS</button></div>
+    </div>
+
+    <div id="tenth_section">
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/37/Jane_Iredale-032137.png">
+            <p class="tenth_section_matter">Meet the NEW PurePressed Base</p>
+            <p class="tenth_section_sub">The bestseller from Jane Iredale, now in fresh, new sustainable packaging.</p>
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/31/Female_Founded_Brands_SquareBanner-054250-031931.jpg">
+            <p class="tenth_section_matter">Shop Women-Owned</p>
+            <p class="tenth_section_sub">Curated solutions from our favorite female-founded brands.</p>
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/52/HPSQ_Banner_676x556-054153-032052.jpg">
+            <p class="tenth_section_matter">Meet Fekkai</p>
+            <p class="tenth_section_sub">Salon-level hair care with clean, natural ingredients that’s free of nasties & full of performance.</p>
+        </div>
+    </div>
+
+    <div id="eleventh_section">
+        <div><img src="https://static.thcdn.com/images/large/webp/widgets/208-us/46/original-ANTIOXIDANTS_BANNERS_1640X244-064546.jpg"></div>
+    </div>
+
+    <div id="twelth_section">
+        <p>Featured Brands</p>
+    </div>
+
+    <div id="thirteenth_section">
+        <div><img src="https://static.thcdn.com/images/small/webp/widgets/208-us/14/original-obagi_logo-105214.png"></div>
+        <div><img src="https://static.thcdn.com/images/small/webp/widgets/208-us/59/Skinc-014559.jpg"></div>
+        <div><img src="https://static.thcdn.com/images/small/webp/widgets/208-us/34/Untitled_design_%2811%29-033834.png"></div>
+        <div><img src="https://static.thcdn.com/images/small/webp/widgets/208-us/33/Untitled_design_%2814%29-033933.png"></div>
+        <div><img src="https://static.thcdn.com/images/small/webp/widgets/208-us/08/SkinMedica-014608.jpg"></div>
+        <div><img src="https://static.thcdn.com/images/small/webp/widgets/208-us/34/SundayRiley-Logo_2000x2000-01-075734.jpg"></div>
+    </div>
+
+    <div id="fourteenth_section">
+        <p>Female-Founded Brands</p>
+    </div>
+
+    <div id="fifteenth_section">
+        <button class="left" style="width: 3%; padding-top: 10px; padding-bottom: 10px; margin-top: 14%;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg></button>
+        <div class="fifteenth_section_products"></div>
+        <button class="btn_right" style="width: 3%; padding-top: 10px; padding-bottom: 10px; margin-top: 14%;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </svg></button>
+    </div>
+
+    <div id="sixteenth_section">
+        <p>New Arrivals</p>
+    </div>
+
+    <div id="seventeenth_section">
+        <button class="left" style="width: 3%; padding-top: 10px; padding-bottom: 10px; margin-top: 14%;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg></button>
+        <div class="seventeenth_section_products"></div>
+        <button class="btn_right" style="width: 3%; padding-top: 10px; padding-bottom: 10px; margin-top: 14%;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </svg></button>
+    </div>
+</body>
+</html>
+
+<script>
+    arr=[{
+        img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370303-1074944341868735.jpg",
+        name:"EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)",
+        // star:"<span class="fa fa-star checked"></span>",
+        price:"$37.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13656347-1434935260795217.jpg",
+        name:"EltaMD Foaming Facial Home and Away Duo 5.0 Stars 1 Reviews",
+        // star:"gjhjghu",
+        price:"$39.50"},
+
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370308-1584944342337920.jpg",
+        name:"EltaMD UV Pure Broad-Spectrum SPF 47 (4 oz.)",
+        // star:,
+        price:"$27.50"},
+
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370307-5484944342267303.jpg",
+        name:"EltaMD Foaming Facial Cleanser (7 oz.) 4.73 Stars 534 Reviews",
+        // star:,
+        price:"$28.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/1600/1600/12538013-4764765050522444.jpg",
+        name:"EltaMD UV Clear SPF46 Broad-Spectrum Duo (Worth $72) 5.0 Stars 3 Reviews",
+        // star:,
+        price:"$70.00"}
+    ];
+
+    arr.map(function(el){
+        var div=document.createElement("div");
+        div.setAttribute("class","scroll_div");
+        var img=document.createElement("img");
+        img.setAttribute("class","scroll_img");
+        img.src=el.img;
+        var name=document.createElement("p");
+        name.setAttribute("class","scroll_name");
+        name.innerText=el.name;
+        var price=document.createElement("p");
+        price.setAttribute("class","scroll_price");
+        price.innerText=el.price;
+        var btn_div=document.createElement("div");
+        var btn=document.createElement("button");
+        btn.setAttribute("class","scroll_button");
+        btn.innerText="QUICK BUY";
+
+        btn_div.append(btn)
+        div.append(img,name,price,btn_div);
+        document.querySelector(".scroll_matter").append(div);
+        
+    })
+
+        // document.querySelector("left").addEventListener("click",moveLeft);
+        // function moveLeft(){
+        //     document.querySelector("scroll_matter").scrollLeft -= 20;
+        // }
+
+
+        // document.querySelector("btn_right").addEventListener("click",moveRight);
+        // function moveRight(){
+        //     document.querySelector("scroll_matter").scrollLeft += 20;
+        // }
+        // }
+
+    var arr2=[
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370303-1074944341868735.jpg",
+        name:"EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)",
+        sub:"$15 EltaMD Gift",
+        // star:"dhhh",
+        price:"$37.00"},
+
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370312-1044938634157826.jpg",
+        name:"EltaMD UV Clear Broad-Spectrum SPF 46 - Tinted (1.7 oz.)",
+        sub:"$15 EltaMD Gift",
+        // star:"dhhh",
+        price:"$39.00"},
+
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13417349-1374914794952525.jpg",
+        name:"EltaMD Complete Skin and Sun Kit (Worth $137.00)",
+        sub:"$15 EltaMD Gift",
+        // star:"dhhh",
+        price:"$115.00"},
+
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370304-1834876993606203.jpg",
+        name:"EltaMD AM Therapy Facial Moisturizer (1.7 oz.)",
+        sub:"Earn 3x Dermstore Rewards Points",
+        // star:"dhhh",
+        price:"$36.00"},
+
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12538013-4764765050522444.jpg",
+        name:"EltaMD UV Clear SPF46 Broad-Spectrum Duo (Worth $72)",
+        sub:"$15 EltaMD Gift",
+        // star:"dhhh",
+        price:"$70.00"},
+
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370314-1304944342872775.jpg",
+        name:"EltaMD UV Elements Tinted Broad-Spectrum SPF 44 (2 oz.)",
+        sub:"$15 EltaMD Gift",
+        // star:"dhhh",
+        price:"$36.50"},
+
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370308-1584944342337920.jpg",
+        name:"EltaMD UV Pure Broad-Spectrum SPF 47 (4 oz.)",
+        sub:"$15 EltaMD Gift",
+        // star:"dhhh",
+        price:"$27.50"},
+    ]
+    arr2.map(function(el){
+        var div=document.createElement("div");
+        div.setAttribute("class","scroll_div");
+        var img=document.createElement("img");
+        img.setAttribute("class","scroll_img");
+        img.src=el.img;
+        var name=document.createElement("p");
+        name.setAttribute("class","scroll_name");
+        name.innerText=el.name;
+        var sub=document.createElement("p");
+        sub.innerText=el.sub;
+        sub.setAttribute("class","sub");
+        var price=document.createElement("p");
+        price.setAttribute("class","scroll_price");
+        price.innerText=el.price;
+        var btn=document.createElement("button");
+        btn.setAttribute("class","scroll_button");
+        btn.innerText="QUICK BUY";
+
+        div.append(img,name,sub,price,btn);
+        document.querySelector(".seventh_section_products").append(div);
+        
+    })
+
+
+    var arr3=[
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/11174178-1044909106371632.jpg",
+        name:"Paula's Choice SKIN PERFECTING 2 BHA Liquid Exfoliant (4 fl. oz.)",
+        // star:,
+        price:"$32.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/12901956-1634871508329232.jpg",
+        name:"Supergoop!® Unseen Sunscreen SPF 40 1.7 fl. oz.",
+        // star:,
+        price:"$36.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/11588281-8764882139037003.jpg",
+        name:"Sunday Riley GOOD GENES All-In-One Lactic Acid Treatment (1.7 oz. - $175 Value)",
+        // star:,
+        price:"$122.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/12902784-7634871308243767.jpg",
+        name:"Supergoop!® Glowscreen SPF 40 1.7 fl. oz.2 BHA Liquid Exfoliant (4 fl. oz.)",
+        // star:,
+        price:"$36.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/11288881-1144871571568377.jpg",
+        name:"NuFACE Mini (2 piece) SPF 50 with Vitamin C 6 fl. oz.",
+        // star:,
+        price:"$209.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/11174228-4204909082865633.jpg",
+        name:"Paula's Choice 10 Azelaic Acid Booster (1 fl. oz.) 2 BHA Liquid Exfoliant (4 fl. oz.)",
+        // star:,
+        price:"$38.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/11291053-1204870993023762.jpg",
+        name:"Jan Marini Bioglycolic Face Cleanser (8 oz.)Super Booster (0.67 fl. oz.)",
+        // star:,
+        price:"$45.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/12902688-1514869963703809.jpg",
+        name:"ILIA Limitless Lash Mascara (Various Sizes)Super Booster (0.67 fl. oz.)",
+        // star:,
+        price:"$13.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/11287917-1524870992160245.jpg",
+        name:"Jan Marini Age Intervention Face Cream (1 oz.)",
+        // star:,
+        price:"$115.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/12695136-1154866655306041.jpg",
+        name:"Dr. Loretta Intense Replenishing Serum (30 ml.)",
+        // star:,
+        price:"$70.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/11289052-1374909086933576.jpg",
+        name:"Paula's Choice C15 Super Booster (0.67 fl. oz.)",
+        // star:,
+        price:"$52.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/12901001-2174876994385429.jpg",
+        name:"Supergoop!® PLAY Antioxidant Body Mist SPF 50 with Vitamin C 6 fl. oz.",
+        // star:,
+        price:"$21.00"},
+]
+
+        arr3.map(function(el){
+        var div=document.createElement("div");
+        div.setAttribute("class","scroll_div");
+        var img=document.createElement("img");
+        img.setAttribute("class","scroll_img");
+        img.src=el.img;
+        var name=document.createElement("p");
+        name.setAttribute("class","scroll_name");
+        name.innerText=el.name;
+        // var sub=document.createElement("p");
+        // sub.innerText=el.sub;
+        // sub.setAttribute("class","sub");
+        var price=document.createElement("p");
+        price.setAttribute("class","scroll_price");
+        price.innerText=el.price;
+        var btn=document.createElement("button");
+        btn.setAttribute("class","scroll_button");
+        btn.innerText="QUICK BUY";
+
+        div.append(img,name,price,btn);
+        document.querySelector(".fifteenth_section_products").append(div);
+        
+    })
+
+        
+    var arr4=[
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13644769-2094935078971616.jpg",
+        name:"Sunday Riley C.E.O. Afterglow Brightening Vitamin C Cream 50ml",
+        sub:"New Arrival",
+        price:"$65.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13156809-1574915281422679.jpg",
+        name:"TriPollar STOP Vx",
+        sub:"New Arrival",
+        price:"$649.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13694394-1174938374323578.jpg",
+        name:"TriPollar STOP X Rose Gold and Cosmetics Bag Exclusive Bundle (Worth $424.00)",
+        sub:"New Arrival",
+        price:"$399.50"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13674838-2504939183735374.jpg",
+        name:"jane iredale Pure Pressed Blush 3.7g (Various Shades)",
+        sub:"New Arrival",
+        price:"$32.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13516546-2844930071318699.jpg",
+        name:"SkinCeuticals Phyto A+ Brightening Treatment 1 fl. oz",
+        sub:"SkinCeuticals Gift",
+        price:"$105.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13656361-8144937082682854.jpg",
+        name:"SENTÉ Dermal Repair Body Cream 177ml",
+        sub:"$39 SENTÉ Gift",
+        price:"$110.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13645148-2094934999114430.jpg",
+        name:"NuFACE Trinity Supercharged Skincare Routine (Worth $513.00)",
+        sub:"New Arrival",
+        price:"$370.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13645148-2094934999114430.jpg",
+        name:"NuFACE Mini Supercharged Skincare Routine (Worth $363.00)",
+        sub:"New Arrival",
+        price:"$245.00"},
+    ]
+</script>
