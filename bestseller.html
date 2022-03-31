@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sell.css">
+    <script
+       src="https://kit.fontawesome.com/24c494a6b6.js"
+       crossorigin="anonymous"
+     ></script>
+    <script src="sell.js"></script>
     <title>Best-Selling Skin,Hair& Beauty Products</title>
     <style>
         /* #container{
@@ -128,10 +134,10 @@
         #container{
             display: flex;
             flex-wrap: wrap;
-            width: 80%;
-            gap: 20px;
-            margin-left: 25%;
-            margin-right: 5%;
+            width: 95%;
+            gap: 40px;
+            margin-left: 5%;
+            margin-right: 1%;
             justify-content: center;
 
         }
@@ -219,7 +225,7 @@
         <div>Tool & Devices</div>
         <div>Gifts & Sets</div>
         <div><a href="beautifix.html">BeautyFIX</a></div>
-        <div>Sale</div>
+        <div><a href="shop.html">Sale</a></div>
         <div>New</div>
         <div>skin 101</div>
     </div>
@@ -276,7 +282,318 @@
         <option value="AtoZ">A to Z</option>
         <option value="ZtoA">Z to A</option>
     </select>
-    <div id ="container"></div>
+    <div class="container">
+        <div class="sidenav">
+            <div>
+              <button class="dropdown-btn">Refine 
+                <!-- <i class="fa fa-caret-down"></i> -->
+                <hr>
+              </button>
+            </div>
+             <button class="dropdown-btn">Brand
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+
+                <input type="checkbox" id="vehicle1">
+                <label for="vehicle1">100% Pure</label><br>
+
+                <input type="checkbox" id="vehicle1">
+                <label for="vehicle1">Allies of Skin</label><br>
+
+                <input type="checkbox" id="vehicle1">
+                <label for="vehicle1">Alterna</label><br>
+
+                <input type="checkbox" id="vehicle1">
+                <label for="vehicle1">Avene</label><br>
+
+            </div> 
+            
+            <button class="dropdown-btn">Skincare Product Type 
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Moistuizers</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Serums</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Cleansers</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Eye Care</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Exfoliators & Scrubs</label><br>
+          
+            </div> 
+            <button class="dropdown-btn">Skin Type
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">All</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Comnination</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Dehydrated</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Dry</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Mature</label><br>
+
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Normal</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Oily</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Sensitive</label><br>
+            </div> 
+            <button class="dropdown-btn">Skincare Concern
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Acne</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Fine Lines & Wrinkles</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Dehydration</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Pigmention</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Blemishes</label><br>
+            </div> 
+            <button class="dropdown-btn">Skincare Concern
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">HaircareCategory
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Hair Type
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Hair Care Benefit
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Makeup Category
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Makeup Product
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Eyes Products
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Lips Products
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div>  
+            <button class="dropdown-btn">Bath & Body Category
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Bodycare Concern
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Key Ingredients
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Preferences
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Gender
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Average Reviews
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+          </div>
+        <div id ="container"></div>
+    </div>
+    
     <hr>
 </body>
 </html>
@@ -442,6 +759,16 @@
             name : "Rita Hazan Root Concealer Touch Up Spray - Light Brown (2 oz.)",
             print : 12.00
         },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11709474-2084866361945395.jpg",
+            name : "Bioderma Sensibio H2O (16.7 fl. oz.)",
+            print: 14.99
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11709474-2084866361945395.jpg",
+            name : "Oribe Gold Lust Repair Restore Shampoo - Travel (2.53 fl. oz.)",
+            print: 17.00
+        },
 
     ]
 
@@ -517,7 +844,7 @@
         print.style.textAlign= "center";
 
         var btn = document.createElement("button");
-        btn.innerText = "add to card";
+        btn.innerText = "QUICK BUY";
         btn.setAttribute("class","btn1")
 
         btn.addEventListener("click",function(){
