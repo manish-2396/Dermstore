@@ -1142,6 +1142,15 @@
 
         function addtocard(ele){
             console.log(ele)
+            var objproduct={
+
+                img:    ele.imgPro,
+                name:   ele.name,
+                price:  ele.print,
+        }
+        console.log(objproduct)
+        arr_product.push(objproduct);
+        localStorage.setItem("product_details",JSON.stringify(arr_product))
         }
     }
 
