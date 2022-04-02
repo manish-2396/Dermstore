@@ -801,6 +801,10 @@
             display: none;
         }
 
+        .sign_me{
+            cursor: pointer;
+        }
+
 
 
         @media only screen and (min-width: 421px) and (max-width: 780px){
@@ -1469,7 +1473,7 @@
             <div class="top_last">
                 <div><p>Brands</p></div>
                 <div><p>Browse By</p></div>
-                <div><p>Bestsellers</p></div>
+                <div class="best_seller"><p>Bestsellers</p></div>
                 <div><p>Skin Care</p></div>
                 <div><p>Make up</p></div>
                 <div><p>Hair Care</p></div>
@@ -1477,8 +1481,8 @@
                 <div><p>Men</p></div>
                 <div><p>Tools & Devices</p></div>
                 <div><p>Gifts & Sets</p></div>
-                <div><p>BeautyFIX</p></div>
-                <div><p>Sale</p></div>
+                <div class="beauty_fix"><p>BeautyFIX</p></div>
+                <div class="sale"><p>Sale</p></div>
                 <div><p>New</p></div>
                 <div><p>Skin 101</p></div>
             </div>
@@ -1772,7 +1776,7 @@
         <div class="first">
             <div class="footer_left">
                 <p>Sign up to our newsletters and receive the latest exclusive discounts and deals</p>
-                <button>SIGN ME UP</button>
+                <button class="sign_me">SIGN ME UP</button>
             </div>
 
             <div class="footer_right">
@@ -1887,6 +1891,37 @@
 
 
 <script>
+    document.querySelector(".account").addEventListener("click",account);
+    function account(){
+        window.location.href="login.html";
+    }
+
+    document.querySelector(".cart").addEventListener("click",cart);
+    function cart(){
+        window.location.href="card.html";
+    }
+
+    document.querySelector(".best_seller").addEventListener("click",best_seller);
+    function best_seller(){
+        window.location.href="bestseller.html";
+    }
+
+    document.querySelector(".beauty_fix").addEventListener("click",beauty_fix);
+    function beauty_fix(){
+        window.location.href="beautifix.html";
+    }
+
+    document.querySelector(".sign_me").addEventListener("click",sign_me);
+    function sign_me(){
+        window.location.href="register.html";
+    }
+
+    document.querySelector(".sale").addEventListener("click",sale);
+    function sale(){
+        window.location.href="shop.html";
+    }
+
+    
 
     arr=[{
         img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370303-1074944341868735.jpg",
@@ -2298,17 +2333,4 @@
         item.scrollLeft -= 80;
     }
 
-
-
-    
-
-
-    
-
-
-
-
-
-        
-    
 </script>
