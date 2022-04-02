@@ -257,10 +257,6 @@
             width: 100%;
         }
 
-        .scroll_div{
-            border: 1px solid blue;
-        }
-
         .scroll_name{
             text-align: center;
             font-family: 'Lato', sans-serif;
@@ -442,7 +438,7 @@
             font-family: 'Poly', serif;
             font-size: 24px;
             text-align: center;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             margin-top: 60px;
             cursor: pointer;
         }
@@ -452,7 +448,7 @@
             width: 93%;
             height: 470px;
             margin: auto;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             cursor: pointer;
         }
 
@@ -481,7 +477,7 @@
             width: 93%;
             height: 480px;
             margin: auto;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             cursor: pointer;
         }
 
@@ -510,7 +506,7 @@
             font-family: 'Poly', serif;
             font-size: 24px;
             text-align: center;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             margin-top: 60px;
             cursor: pointer;
         }
@@ -520,7 +516,7 @@
             width: 93%;
             height: 500px;
             margin: auto;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             cursor: pointer;
         }
 
@@ -619,7 +615,7 @@
             width: 93%;
             height: 300px;
             margin: auto;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             cursor: pointer;
         }
 
@@ -628,7 +624,7 @@
             width: 98%;
             overflow-y: hidden;
             overflow-x: auto;
-            border: 1px solid blue;
+            /* border: 1px solid blue; */
             white-space: nowrap;
         }
 
@@ -638,7 +634,7 @@
 
         .twentieth_scroll_div{
             width: 100%;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             display: inline-block;
             margin-right: 20px;
         }
@@ -685,6 +681,11 @@
         .twentieth_right:hover{
             background-color: #a7a7a7;
         }
+
+        #select_1{
+            display: none;
+        }
+        
 
         #footer{
             width: 100%;;
@@ -791,33 +792,38 @@
             margin-bottom: 5px;
         }
 
+        .last_footer_right>p{
+            font-family: 'lato', serif;
+            font-weight: bold;
+        }
+
+        .hamburger{
+            display: none;
+        }
+
+
+
         @media only screen and (min-width: 421px) and (max-width: 780px){
             #top_div{
                 width: 100%;
                 height: 80px;
                 background-color: white;
-                /* border: 1px solid #f2f2f2; */
                 cursor: pointer;
             }
 
             .white{
                 margin-top: 0px;
                 height: 20%;
-                /* border: 1px solid red; */
-                /* width: 100%; */
             }
 
             .white>.white_top{
                 margin-top: 0px;
                 height: 80%;
                 width: 100%;
-                /* border: 1px solid blue; */
                 display: flex;
                 justify-content: center;
                 padding-right: 10px;
-                /* padding-bottom: 10px; */
                 background-color: white;
-                /* width: 100%; */
             }
 
             .search>input, .top_last, .account_and_cart>div>div>p{
@@ -829,16 +835,17 @@
             }
 
             .white_top>div>img{
-                width: 120px;
-                height: 30px;
-                margin-left: 180px;
+                width: 100px;
+                height: 24px;
+                margin-left: 140px;
+                margin-top: 5px;
                 /* border: 1px solid blue; */
             }
 
             .search>div>svg{
-                margin-left: -200px;
-                width: 25px;
-                margin-top: -5px;
+                margin-left: -220px;
+                width: 22px;
+                margin-top: -4px;
             }
 
             .account>div>i, .cart>div>svg{
@@ -936,20 +943,16 @@
                 grid-template-columns: repeat(1,1fr);
                 grid-template-rows: auto;
                 gap: 20px;
-                /* border: 1px solid red; */
             }
 
             #eleventh_section{
             width: 100%;
-            /* height: 600px; */
             margin: auto;
             cursor: pointer;
-            /* border: 1px solid blue; */
         }
 
         #eleventh_section>div>img{
             width: 100%;
-            /* height: 100%; */
             padding-top: 60px;
         }
 
@@ -961,7 +964,6 @@
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: auto;
             gap: 20px;
-            /* border: 1px solid red; */
         }
 
         #fifteenth_section>.seventeenth_left{
@@ -999,7 +1001,8 @@
             #twentieth_section>.twentieth_left{
                 height: 50px;
                 width: 11%;
-                margin-top: 25%;
+                margin-top: 15%;
+                margin-right: 5px;
                 border: none;
                 border-radius: 0px 4px 4px 0px;
             }
@@ -1007,18 +1010,424 @@
         #twentieth_section>.twentieth_right{
                 height: 50px;
                 width: 11%;
-                margin-top: 25%;
+                margin-top: 15%;
                 border: none;
                 border-radius: 4px 0px 0px 4px;
             }
+
+            #footer>.first{
+                width: 85%;
+                margin: auto;
+                height: 150px;
+                display: block;
+                justify-content: space-between;
+                box-sizing: border-box;
+        }
+
+        #footer>.first>.footer_left{
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #footer>.second{
+            width: 85%;
+            margin: auto;
+            height: 150px;
+            display: block;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        #footer>.second>.second_left{
+            width: 100%;
+            border-top: 1px solid gray;
+            box-sizing: border-box;
+            margin-top: 50px;
+        }
+        
+        #footer>.second>.second_right{
+            width: 100%;
+        }
+
+        .second_right{
+            display: block;
+        }
+
+        .second_right>div{
+            width: 30%;
+            border-top: 1px solid gray;
+        }
+
+        .second_left>p{
+            border-bottom: 1px solid gray;
+            padding-bottom: 14px;
+        }
+
+        .second_left>p:nth-child(5)
+        {
+            margin-bottom: 40px;
+        }
+
+        #last_footer{
+            width: 100%;
+            border-top: 1px solid gray;
+            margin-top: 300px;
+        }
+
+        #last_footer>div{
+            width: 85%;
+            margin: auto;
+            display: block;
+        }
+
+        .last_footer_left{
+            width: 100%;
+        }
+
+        .last_footer_right{
+            width: 100%;
+        }
+
+        .second_right_one, .second_right_second, .second_right_third{
+            display: none;
+        }
+
+        #select_1{
+            display: inline-block;
+            font-family: 'lato', serif;
+            border: none;
+            width: 100%;
+            font-size: 14px;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+
+        .hamburger{
+            display: block;
+            font-size: 25px;
+            text-align: left;
+            color: black;
+            text-decoration: none;
             
         }
 
+    }
 
 
 
 
-        @media only screen and (min-width: 70px) and (max-width: 420px){}
+        @media only screen and (min-width: 70px) and (max-width: 420px){
+            #top_div{
+                width: 100%;
+                height: 80px;
+                background-color: white;
+                cursor: pointer;
+            }
+
+            .white{
+                margin-top: 0px;
+                height: 20%;
+            }
+
+            .white>.white_top{
+                margin-top: 0px;
+                height: 80%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding-right: 10px;
+                background-color: white;
+            }
+
+            .search>input, .top_last, .account_and_cart>div>div>p{
+                display: none;
+            }
+
+            .search{
+                border: none;
+            }
+
+            .white_top>div>img{
+                width: 100px;
+                height: 24px;
+                margin-left: 90px;
+                margin-top: 5px;
+                /* border: 1px solid blue; */
+            }
+
+            .search>div>svg{
+                margin-left: -180px;
+                width: 22px;
+                margin-top: -4px;
+            }
+
+            .account>div>i, .cart>div>svg{
+                margin-top: -5px;
+            }
+
+            #gray{
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            #gray>.gray_matter{
+                width: 100%;
+                height: 20%;
+                background-color: #f2f2f2;
+                /* border: 1px solid red; */
+            }
+
+            #gray>.gray_matter:nth-child(2), #gray>.gray_matter:nth-child(3), #gray>.gray_matter:nth-child(4){
+                display: none;
+            } 
+
+            .gray_matter>.icon{
+                margin-left: 28%;
+            }
+
+            #fifth_section{
+                display: block;
+            }
+
+            .scroll{
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .left{
+                height: 40px;
+                width: 7%;
+                margin-top: 40%;
+                border: none;
+                border-radius: 0px 1px 1px 0px;
+            }
+
+            .btn_right{
+                height: 40px;
+                width: 7%;
+                margin-top: 40%;
+                border: none;
+                border-radius: 1px 0px 0px 1px;
+            }
+
+            .scroll_matter>div{
+                margin-right: 80px;
+            }
+
+            #sixth_section>p{
+                margin-top: 60px;
+            }
+
+            .seventeenth_left{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 0px 4px 4px 0px;
+            }
+
+            .seventeenth_right{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 4px 0px 0px 4px;
+            }
+
+            #eighth_section>p{
+                margin-top: 60px;
+            }
+
+            #ninth_section{
+                padding-top: 20px;
+                width: 85%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: auto;
+                gap: 20px;
+            }
+
+            #tenth_section{
+                padding-top: 40px;
+                width: 90%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: auto;
+                gap: 20px;
+            }
+
+            #eleventh_section{
+            width: 100%;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        #eleventh_section>div>img{
+            width: 100%;
+            padding-top: 60px;
+        }
+
+        #thirteenth_section{
+            padding-top: 20px;
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+
+        #fifteenth_section>.seventeenth_left{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 0px 4px 4px 0px;
+            }
+
+        #fifteenth_section>.seventeenth_right{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 4px 0px 0px 4px;
+            }
+
+        #new_arrivals_section>.seventeenth_left{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 0px 4px 4px 0px;
+            }
+
+        #new_arrivals_section>.seventeenth_right{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 4px 0px 0px 4px;
+            }
+
+            #twentieth_section>.twentieth_left{
+                height: 50px;
+                width: 11%;
+                margin-top: 15%;
+                margin-right: 5px;
+                border: none;
+                border-radius: 0px 4px 4px 0px;
+            }
+
+        #twentieth_section>.twentieth_right{
+                height: 50px;
+                width: 11%;
+                margin-top: 15%;
+                border: none;
+                border-radius: 4px 0px 0px 4px;
+            }
+
+            #footer>.first{
+                width: 85%;
+                margin: auto;
+                height: 150px;
+                display: block;
+                justify-content: space-between;
+                box-sizing: border-box;
+        }
+
+        #footer>.first>.footer_left{
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #footer>.second{
+            width: 85%;
+            margin: auto;
+            height: 150px;
+            display: block;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        #footer>.second>.second_left{
+            width: 100%;
+            border-top: 1px solid gray;
+            box-sizing: border-box;
+            margin-top: 50px;
+        }
+        
+        #footer>.second>.second_right{
+            width: 100%;
+        }
+
+        .second_right{
+            display: block;
+        }
+
+        .second_right>div{
+            width: 30%;
+            border-top: 1px solid gray;
+        }
+
+        .second_left>p{
+            border-bottom: 1px solid gray;
+            padding-bottom: 14px;
+        }
+
+        .second_left>p:nth-child(5)
+        {
+            margin-bottom: 40px;
+        }
+
+        #last_footer{
+            width: 100%;
+            border-top: 1px solid gray;
+            margin-top: 300px;
+        }
+
+        #last_footer>div{
+            width: 85%;
+            margin: auto;
+            display: block;
+        }
+
+        .last_footer_left{
+            width: 100%;
+        }
+
+        .last_footer_right{
+            width: 100%;
+        }
+
+        .second_right_one, .second_right_second, .second_right_third{
+            display: none;
+        }
+
+        #select_1{
+            display: inline-block;
+            font-family: 'lato', serif;
+            border: none;
+            width: 100%;
+            font-size: 14px;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+
+        .hamburger{
+            display: block;
+            font-size: 25px;
+            text-align: left;
+            color: black;
+            text-decoration: none;
+            
+        }
+    }
     </style>
 </head>
 <body>
@@ -1028,6 +1437,7 @@
             <!-- First part -->
             <div class="white_top">
                 <!-- Dermstore logo and name -->
+                <a href="javascript:void(0);" class="hamburger">&#9776;</a>
                 <div>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREOArrqc7sf8CcH6397fZikjFfRELlBl4Iwc_F3LsQXdiU5tvc8EYd3RXyDTTmrIhEhg&usqp=CAU" alt=""> 
                 </div>
@@ -1394,6 +1804,14 @@
                     <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Referrals</p>
                     <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Order History</p>
                 </div>
+                <select name="" id="select_1">
+                    <option value="My Account">My Account</option>
+                    <option value="Manage My Subscription">Manage My Subscription</option>
+                    <option value="My Rewards">My Rewards</option>
+                    <option value="My Favourites">My Favourites</option>
+                    <option value="Referrals">Referrals</option>
+                    <option value="Order History">Order History</option>
+                </select>
 
                 <div class="second_right_second">
                     <p style="font-family: 'Poly', serif; font-size: 14px;">Company</p>
@@ -1401,6 +1819,12 @@
                     <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Press</p>
                     <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">What is Klarna?</p>
                 </div>
+                <select name="" id="select_1">
+                    <option value="My Account">Company</option>
+                    <option value="Manage My Subscription">About Us</option>
+                    <option value="My Rewards">Press</option>
+                    <option value="My Favourites">What is Klarna?</option>
+                </select>
 
                 <div class="second_right_third">
                     <p style="font-family: 'Poly', serif; font-size: 14px;">Legal</p>
@@ -1410,6 +1834,14 @@
                     <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Product Recall</p>
                     <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Accessibility</p>
                 </div>
+                <select name="" id="select_1">
+                    <option value="My Account">Legal</option>
+                    <option value="Manage My Subscription">Privacy Policy</option>
+                    <option value="My Rewards">Terms & Conditions</option>
+                    <option value="My Favourites">Modern Slavery Statement</option>
+                    <option value="Referrals">Product Recall</option>
+                    <option value="Order History">Accessibility</option>
+                </select>
             </div>
         </div>
     </div>
@@ -1455,6 +1887,7 @@
 
 
 <script>
+
     arr=[{
         img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370303-1074944341868735.jpg",
         name:"EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)",
@@ -1497,7 +1930,7 @@
         var btn_div=document.createElement("div");
         var btn=document.createElement("button");
         btn.setAttribute("class","scroll_button");
-        btn.innerText="QUICK BUY";
+        btn.innerText="ADD TO CART";
 
         btn_div.append(btn)
         div.append(img,name,price,btn_div);
@@ -1520,6 +1953,7 @@
 
     function product(el){
         var objproduct={
+            img:el.img,
             name:el.name,
             price:el.price,
         }
@@ -1589,7 +2023,7 @@
         price.innerText=el.price;
         var btn=document.createElement("button");
         btn.setAttribute("class","scroll_button");
-        btn.innerText="QUICK BUY";
+        btn.innerText="ADD TO CART";
 
         div.append(img,name,sub,price,btn);
         document.querySelector(".seventeenth_section_products").append(div);
@@ -1681,7 +2115,7 @@
         price.innerText=el.price;
         var btn=document.createElement("button");
         btn.setAttribute("class","scroll_button");
-        btn.innerText="QUICK BUY";
+        btn.innerText="ADD TO CART";
 
         div.append(img,name,price,btn);
         document.querySelector(".fifteenth_section_products").append(div);
@@ -1775,7 +2209,7 @@
         price.innerText=el.price;
         var btn=document.createElement("button");
         btn.setAttribute("class","scroll_button");
-        btn.innerText="QUICK BUY";
+        btn.innerText="ADD TO CART";
 
         div.append(img,name,sub,price,btn);
         document.querySelector(".new_arrivals_section_products").append(div)
@@ -1863,6 +2297,10 @@
         var item=document.querySelector(".twentieth_section_products");
         item.scrollLeft -= 80;
     }
+
+
+
+    
 
 
     
