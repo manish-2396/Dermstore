@@ -216,6 +216,14 @@ var seller = [
 
 
 
+
+
+
+
+
+
+
+
 window.addEventListener("load" ,function(){
     Seller(seller);
 });
@@ -279,5 +287,40 @@ seller.map(function(ele){
 
     box.append(img,name,print,btn)
     document.querySelector("#utkk").append(box)
+
+    btn.addEventListener("click",function(){
+        product(ele);
+    })
+    img.addEventListener("click",function(){
+        productd(ele)
+    })
 });
+}
+
+
+var arr_product = JSON.parse(localStorage.getItem("product_details")) || []
+
+function product(ele){
+   console.log(ele)
+   var objproduct={
+    img:ele.imgPro,
+    name:ele.name,
+    price:ele.print,
+}
+   arr_product.push(objproduct);
+   localStorage.setItem("product_details",JSON.stringify(arr_product))
+}
+
+var detaq = JSON.parse(localStorage.getItem("detaq")) || []
+function productd(ele)
+{
+    console.log(ele)
+   var onepage = {
+       img:ele.imgPro,
+       name:ele.name,
+       price:ele.print,
+   }
+   detaq.push(onepage);
+   localStorage.setItem("care", JSON.stringify(detaq))
+   window.location.href="productde.html";
 }
