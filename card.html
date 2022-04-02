@@ -502,7 +502,7 @@
     // console.log(items)
     var subtotal=items.reduce(function(sum,el,i,ar){
             var price=el.price;
-            price=price.slice(1);
+            // price=price.slice(1);
             return sum+Number(price);
         },0)
 
@@ -543,7 +543,7 @@
             {
                 count++;
                 amount=items[i].price;
-                amount=amount.slice(1)
+                // amount=amount.slice(1)
             }
         }
         var total=count;
