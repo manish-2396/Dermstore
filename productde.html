@@ -1017,6 +1017,38 @@ table {
             var tc = document.getElementById("price")
             tc.innerText = ele.price;
           });
+
+          document.querySelector("#buy-button-product").addEventListener("click",function(){
+            product(ele);
+        })
+
+    var arr_product;
+    if(JSON.parse(localStorage.getItem("product_details"))==null)
+    {
+        arr_product=[];
+    }
+    else
+    {
+        arr_product=JSON.parse(localStorage.getItem("product_details"));
+    }
+
+    datu.map(function product(ele){
+        var objproduct={
+            img:ele.img,
+            name:ele.name,
+            price:ele.price,
+        }
+        arr_product.push(objproduct);
+        localStorage.setItem("product_details",JSON.stringify(arr_product))
+    })
+    document.querySelector(".cart").addEventListener("click",cart);
+    function cart(){
+        window.location.href="card.html";
+    }
+    document.querySelector(".account").addEventListener("click",account);
+    function account(){
+        window.location.href="login.html";
+    }
       </script>
 </body>
 </html>
