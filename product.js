@@ -274,7 +274,7 @@ seller.map(function(ele){
     print.style.textAlign= "center";
 
     var btn = document.createElement("button");
-    btn.innerText = "add to card";
+    btn.innerText = "Add to Cart";
     btn.setAttribute("class","btn-btn")
 
     box.append(img,name,print,btn)
