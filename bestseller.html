@@ -1099,6 +1099,15 @@
         }
     }
 
+    var arr_product;
+    if(JSON.parse(localStorage.getItem("product_details"))==null)
+    {
+        arr_product=[];
+    }
+    else
+    {
+        arr_product=JSON.parse(localStorage.getItem("product_details"));
+    }
 
     function Seller(Bestsellers){
         document.querySelector("#container").innerText = "";
@@ -1114,19 +1123,19 @@
         name.innerText = ele.name;
         name.style.textAlign="center";
 
-        var print = document.createElement("h3");
-        print.innerText = ele.print;
-        print.style.textAlign= "center";
+        var price = document.createElement("h3");
+        price.innerText = ele.print;
+        price.style.textAlign= "center";
 
         var btn = document.createElement("button");
-        btn.innerText = "Add to Card";
+        btn.innerText = "ADD TO CART";
         btn.setAttribute("class","btn1")
 
         btn.addEventListener("click",function(){
             addtocard(ele)
         })
 
-        box.append(img,name,print,btn);
+        box.append(img,name,price,btn);
 
         document.querySelector("#container").append(box)
         })
@@ -1135,6 +1144,9 @@
             console.log(ele)
         }
     }
+
+    
+    
     
 
     

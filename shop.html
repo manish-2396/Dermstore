@@ -39,7 +39,7 @@
             margin-top: 22px;
         }
 
-        .white_top>div>img{
+        .white_top>div>a>img{
             height: 60px;
         }
 
@@ -341,7 +341,7 @@
             <!-- Dermstore logo and name -->
             <a href="javascript:void(0);" class="hamburger">&#9776;</a>
             <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREOArrqc7sf8CcH6397fZikjFfRELlBl4Iwc_F3LsQXdiU5tvc8EYd3RXyDTTmrIhEhg&usqp=CAU" alt=""> 
+                <a href="home.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREOArrqc7sf8CcH6397fZikjFfRELlBl4Iwc_F3LsQXdiU5tvc8EYd3RXyDTTmrIhEhg&usqp=CAU" alt=""></a> 
             </div>
 
             <!-- Search bar -->
@@ -368,20 +368,20 @@
           </div>
           <!-- Nav Bar -->
         <div class="top_last">
-            <div><p>Brands</p></div>
-            <div><p>Browse By</p></div>
-            <div><p>Bestsellers</p></div>
-            <div><p>Skin Care</p></div>
-            <div><p>Make up</p></div>
-            <div><p>Hair Care</p></div>
-            <div><p>Bath & Body</p></div>
-            <div><p>Men</p></div>
-            <div><p>Tools & Devices</p></div>
-            <div><p>Gifts & Sets</p></div>
-            <div><p>BeautyFIX</p></div>
-            <div><p>Sale</p></div>
-            <div><p>New</p></div>
-            <div><p>Skin 101</p></div>
+                <div><a>Brands</a></div>
+                <div><a>Browse By</a></div>
+                <div><a style="text-decoration: none; color: #262626;;" href="bestseller.html">Bestsellers</a></div>
+                <div><a>Skin Care</a></div>
+                <div><a>Make up</a></div>
+                <div><a>Hair Care</a></div>
+                <div><a>Bath & Body</a></div>
+                <div><a>Men</a></div>
+                <div><a>Tools & Devices</a></div>
+                <div><a>Gifts & Sets</a></div>
+                <div><a style="text-decoration: none; color: #262626;;" href="beautifix.html">BeautyFIX</a></div>
+                <div><a style="text-decoration: none; color: #262626;;" href="shop.html">Sale</a></div>
+                <div><a>New</a></div>
+                <div><a>Skin 101</a></div>
         </div>
     </div>
     <!-- white end -->
@@ -898,5 +898,17 @@
 
 <script src="sell.js"></script>
 <script src="product.js"></script>
+
+<script>
+  document.querySelector(".account").addEventListener("click",account);
+    function account(){
+        window.location.href="login.html";
+    }
+
+    document.querySelector(".cart").addEventListener("click",cart);
+    function cart(){
+        window.location.href="card.html";
+    }
+</script>
 </body>
 </html> 
