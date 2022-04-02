@@ -493,6 +493,11 @@
 
 
 <script>
+    document.querySelector(".button_2").addEventListener("click",checkout)
+    function checkout(){
+        window.location.href="checkout.html";
+    }
+
     var items= JSON.parse(localStorage.getItem("product_details"))
     // console.log(items)
     var subtotal=items.reduce(function(sum,el,i,ar){
