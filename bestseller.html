@@ -1135,6 +1135,10 @@
             addtocard(ele)
         })
 
+        img.addEventListener("click",function(){
+            productd(ele)
+        })
+
         box.append(img,name,price,btn);
 
         document.querySelector("#container").append(box)
@@ -1151,6 +1155,22 @@
         console.log(objproduct)
         arr_product.push(objproduct);
         localStorage.setItem("product_details",JSON.stringify(arr_product))
+        }
+
+
+
+        var detaq = JSON.parse(localStorage.getItem("detaq")) || []
+            function productd(ele)
+        {
+            console.log(ele)
+        var onepage = {
+            img:ele.imgPro,
+            name:ele.name,
+            price:ele.print,
+        }
+        detaq.push(onepage);
+        localStorage.setItem("care", JSON.stringify(detaq))
+        window.location.href="productde.html";
         }
     }
 
